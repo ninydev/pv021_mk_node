@@ -17,6 +17,7 @@ exports.get = function (request, response) {
 exports.post = function (request, response) {
     console.log(request.body)
     const newStudent = new students (request.body)
+    newStudent['someFild'] = "tetete"
     newStudent.save( function (err) {
         if(err) {
             console.log(err)

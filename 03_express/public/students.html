@@ -23,7 +23,9 @@
      */
     document.getElementById("studentSave").onclick = function (){
         let st = {
-            name: document.getElementById("studentName").value
+            name: document.getElementById("studentName").value,
+            someFild : 'inHtml',
+            age: 15
         }
         console.log(st)
         fetch('/students', {
@@ -52,7 +54,7 @@
         ul.innerHTML = ""
         for (const student of students) {
             let li = document.createElement("li")
-            li.dataset.id = student.id
+            li.dataset.id = student._id
             li.innerText = student.name
             ul.appendChild(li)
         }
