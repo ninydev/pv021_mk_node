@@ -25,7 +25,7 @@ app.use(logger('dev'));
 
 // Router
 let indexRouter = require('./routes/index');
-let usersRouter = require('./routes/users');
+let usersRouter = require('./routes/users')
 let studentRouter = require('./routes/students')
 
 app.use('/', indexRouter);
