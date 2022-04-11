@@ -33,5 +33,17 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/students', studentRouter);
 
+// DataBase
+let mongoose = require('mongoose')
+let connectionString = "mongodb+srv://userdb:QweAsdZxc!23@cluster0.wedqv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+mongoose.connect(
+    connectionString,
+    { useNewUrlParser: true, useUnifiedTopology: true },
+    function (err) {
+        console.log("DB Error")
+        console.log(err)
+    }
+)
+
 
 module.exports = app;
