@@ -4,8 +4,9 @@ let app = express();
 
 
 // JSON
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 
 
 // Disk - file operations

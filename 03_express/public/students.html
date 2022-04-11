@@ -8,10 +8,41 @@
 
 <ul id="lstStudents">
 </ul>
+<div>
+    <input type="text" id="studentName">
+    <input type="button" id="studentSave">
+</div>
+
 
 
 <script>
     let students = []
+
+    /**
+     * Отправить студента на бек
+     */
+    document.getElementById("studentSave").onclick = function (){
+        let st = {
+            name: document.getElementById("studentName").value
+        }
+        console.log(st)
+        fetch('/students', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: JSON.stringify(st)
+        })
+            .then(res => {
+            getList()
+            })
+            .catch(err=> {
+                console.log("Err")
+                console.log(err)
+            })
+    }
+
 
     /**
      * Построить лист студентов
