@@ -9,14 +9,18 @@ WORKDIR /usr/src/app
 # скопировать файл зависимостей в рабочую папку
 COPY package*.json ./
 
-# запустить код на стороне сервера
-RUN npm install
-
 # скопировать в рабочую папку весь проект
 COPY . .
+
+# запустить код на стороне сервера
+# RUN npm install
+RUN npm install -g npm@8.7.0
+# RUN npm install -g yarn
+RUN yarn install
 
 # октрыть порт для работы
 EXPOSE $PORT
 
 #запустить сервер
-CMD["node", "./bin/www"]
+#CMD ["npm", "start"]
+CMD ["yarn", "start"]
