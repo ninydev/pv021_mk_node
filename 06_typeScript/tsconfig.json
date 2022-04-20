@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "removeComments": true,
+    "sourceMap": true,
+    "outFile": "./build/ts/tsc.js"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "ts/entities/user.ts",
+    "ts/entities/group.ts"
+  ]
+}
