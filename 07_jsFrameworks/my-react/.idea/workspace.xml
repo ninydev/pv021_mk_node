@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/MyReactive.js" afterDir="false" />
+    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="React">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyReactive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyReactive.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../my-vue-js/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-vue-js/src/components/reactive/MyReactive.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/src/components/reactive/MyReactive.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myangularnext/src/app/components/contact-form/contact-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../myangularnext/src/app/components/contact-form/contact-form.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,8 +88,16 @@
       <option name="presentableId" value="Default" />
       <updated>1650559245896</updated>
       <workItem from="1650559247231" duration="1617000" />
-      <workItem from="1650732587827" duration="1268000" />
+      <workItem from="1650732587827" duration="1705000" />
     </task>
+    <task id="LOCAL-00001" summary="React">
+      <created>1650733908063</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650733908063</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="React" />
+    <option name="LAST_COMMIT_MESSAGE" value="React" />
   </component>
 </project>
