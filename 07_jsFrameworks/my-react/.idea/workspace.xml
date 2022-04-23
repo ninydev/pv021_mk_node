@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="React">
+    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="React onInputChange">
+      <change afterPath="$PROJECT_DIR$/src/components/MyArray.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyReactive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyReactive.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../my-vue-js/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -88,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650559245896</updated>
       <workItem from="1650559247231" duration="1617000" />
-      <workItem from="1650732587827" duration="1705000" />
+      <workItem from="1650732587827" duration="3083000" />
     </task>
     <task id="LOCAL-00001" summary="React">
       <created>1650733908063</created>
@@ -97,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650733908063</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="React onInputChange">
+      <created>1650734640315</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650734640315</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="React" />
-    <option name="LAST_COMMIT_MESSAGE" value="React" />
+    <MESSAGE value="React onInputChange" />
+    <option name="LAST_COMMIT_MESSAGE" value="React onInputChange" />
   </component>
 </project>

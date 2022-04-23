@@ -10,6 +10,14 @@ class MyReactive extends React.Component {
         this.onInputChange = this.onInputChange.bind(this)
     }
 
+    componentDidMount() {
+        console.log("Mount")
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('Update')
+    }
+
     onInputChange(ev){
         const state = this.state
         const name = ev.target.name

@@ -1,10 +1,10 @@
 import './App.css';
-import MyReactive from "./components/MyReactive";
+import MyArray from "./components/MyArray";
 
 function App() {
   return (
     <div className="App">
-        <MyReactive></MyReactive>
+        <MyArray></MyArray>
     </div>
   );
 }
