@@ -16,6 +16,9 @@
 <script>
 export default {
   name: "MyReactive",
+  mounted: () => {
+    console.log ("Mounted")
+  },
   data() {
     return {
       myName: "Vasya",
