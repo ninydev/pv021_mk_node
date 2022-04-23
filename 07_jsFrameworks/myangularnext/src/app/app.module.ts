@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './components/hello-world/hello-world.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -11,9 +12,10 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     HelloWorldComponent,
     ContactFormComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

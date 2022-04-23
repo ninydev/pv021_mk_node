@@ -7,7 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactFormComponent implements OnInit {
 
-  constructor() { }
+  get myName(): string {
+    return this._myName;
+  }
+
+  set myName(value: string) {
+    this._myName = value;
+  }
+
+  private _myName: string
+
+  // string myName {get;set;}
+
+  constructor() {
+    this._myName = "Vasya"
+  }
 
   ngOnInit(): void {
   }
