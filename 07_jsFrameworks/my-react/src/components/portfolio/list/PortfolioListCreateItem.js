@@ -23,7 +23,7 @@ export default class PortfolioListCreateItem extends React.Component {
     }
 
     onSave(){
-
+        this.props.onSave(this.state.portfolio)
     }
 
     onInputChange(ev){

@@ -15,6 +15,14 @@ export default class PortfoliosList extends React.Component {
             isLoad: true, // Показывает - произошла ли загрузка
             error: null // Сохраняет ошибку при загрузке
         }
+
+        this.create = this.create.bind(this)
+    }
+
+    create(newPortfolio){
+        const state = this.state
+        state.portfolios.push(newPortfolio)
+        this.setState(state)
     }
 
     render() {
@@ -28,7 +36,7 @@ export default class PortfoliosList extends React.Component {
                         return <PortfolioListItem portfolio={p} key={'portfolioListItem_' + p.id} />
                     })}
                 </ul>
-                <PortfolioListCreateItem/>
+                <PortfolioListCreateItem onSave={this.create}/>
             </div>
         )
     }
