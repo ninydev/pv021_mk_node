@@ -12,18 +12,18 @@ import PageError404 from "./pages/Error404";
 
 function App() {
   return (
-    <div className="App">
-        <Header/>
-            <BrowserRouter>
+      <BrowserRouter>
+        <div className="App">
+            <Header/>
                 <Routes>
                     <Route path="/" element={<PageHome />} />
                     <Route path="about" element={<PageAbout />} />
                     <Route path="contact" element={<PageContact />} />
                     <Route path="*" element={<PageError404 />} />
                 </Routes>
-            </BrowserRouter>
-        <Footer/>
-    </div>
+            <Footer/>
+        </div>
+      </BrowserRouter>
   );
 }
 
