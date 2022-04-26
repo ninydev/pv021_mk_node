@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="React Router">
-      <change afterPath="$PROJECT_DIR$/src/layouts/MenuMain.js" afterDir="false" />
+    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="React Router + MenuMain">
+      <change afterPath="$PROJECT_DIR$/src/assets/css/pages/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/pages/contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfoliosList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Portfolios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MenuMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MenuMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -46,7 +53,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/portfolio/list" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -55,7 +63,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\1\source\repos\pv021_mk_node\07_jsFrameworks\my-react\src\components\portfolio\list" />
       <recent name="C:\Users\1\source\repos\pv021_mk_node\07_jsFrameworks\my-react\src\pages" />
+      <recent name="C:\Users\1\source\repos\pv021_mk_node\07_jsFrameworks\my-react\src\assets\css\pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\1\source\repos\pv021_mk_node\07_jsFrameworks\my-react\src\assets\img" />
+      <recent name="C:\Users\1\source\repos\pv021_mk_node\07_jsFrameworks\my-react\src\assets\css" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -98,7 +112,7 @@
       <updated>1650559245896</updated>
       <workItem from="1650559247231" duration="1617000" />
       <workItem from="1650732587827" duration="4091000" />
-      <workItem from="1650985326701" duration="3879000" />
+      <workItem from="1650985326701" duration="8113000" />
     </task>
     <task id="LOCAL-00001" summary="React">
       <created>1650733908063</created>
@@ -135,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650988312509</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="React Router + MenuMain">
+      <created>1650989267876</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650989267876</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +179,7 @@
     <MESSAGE value="React onInputChange" />
     <MESSAGE value="React MyArray" />
     <MESSAGE value="React Router" />
-    <option name="LAST_COMMIT_MESSAGE" value="React Router" />
+    <MESSAGE value="React Router + MenuMain" />
+    <option name="LAST_COMMIT_MESSAGE" value="React Router + MenuMain" />
   </component>
 </project>

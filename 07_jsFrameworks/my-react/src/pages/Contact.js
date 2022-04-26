@@ -1,12 +1,12 @@
 import React from "react";
-import MenuMain from "../layouts/MenuMain";
+import '../assets/css/pages/contact.css'
 
 export default class PageContact extends React.Component {
     render() {
         return (
             <div>
 
-                Contact </div>
+                <h1>Contact</h1> </div>
         )
     }
 }
