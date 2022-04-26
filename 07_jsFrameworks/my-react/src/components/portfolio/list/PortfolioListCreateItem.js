@@ -24,6 +24,10 @@ export default class PortfolioListCreateItem extends React.Component {
 
     onSave(){
         this.props.onSave(this.state.portfolio)
+        const state = this.state
+        state.isVisible = !state.isVisible
+        state.portfolio = {}
+        this.setState(state)
     }
 
     onInputChange(ev){

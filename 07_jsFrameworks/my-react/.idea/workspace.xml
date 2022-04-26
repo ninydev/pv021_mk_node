@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="Portfolio">
+    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="Portfolio Save (Create)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/portfolio/list/PortfoliosList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfoliosList.js" afterDir="false" />
@@ -102,7 +102,7 @@
       <updated>1650559245896</updated>
       <workItem from="1650559247231" duration="1617000" />
       <workItem from="1650732587827" duration="4091000" />
-      <workItem from="1650985326701" duration="8452000" />
+      <workItem from="1650985326701" duration="8875000" />
     </task>
     <task id="LOCAL-00001" summary="React">
       <created>1650733908063</created>
@@ -153,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650993782202</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Portfolio Save (Create)">
+      <created>1650994185467</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650994185467</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +185,7 @@
     <MESSAGE value="React Router" />
     <MESSAGE value="React Router + MenuMain" />
     <MESSAGE value="Portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Portfolio" />
+    <MESSAGE value="Portfolio Save (Create)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Portfolio Save (Create)" />
   </component>
 </project>

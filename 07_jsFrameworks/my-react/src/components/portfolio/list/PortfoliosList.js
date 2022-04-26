@@ -20,6 +20,7 @@ export default class PortfoliosList extends React.Component {
     }
 
     create(newPortfolio){
+        newPortfolio.id = Date.now()
         const state = this.state
         state.portfolios.push(newPortfolio)
         this.setState(state)
