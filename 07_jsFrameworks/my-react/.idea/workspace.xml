@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="Portfolio Save (Create)">
+    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="Portfolio Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portfolio/list/PortfoliosList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfoliosList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
       <workItem from="1650559247231" duration="1617000" />
       <workItem from="1650732587827" duration="4091000" />
       <workItem from="1650985326701" duration="10266000" />
-      <workItem from="1651071644628" duration="3107000" />
+      <workItem from="1651071644628" duration="4254000" />
     </task>
     <task id="LOCAL-00001" summary="React">
       <created>1650733908063</created>
@@ -168,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650994639534</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Portfolio Update">
+      <created>1651074820057</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651074820058</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +200,7 @@
     <MESSAGE value="React Router + MenuMain" />
     <MESSAGE value="Portfolio" />
     <MESSAGE value="Portfolio Save (Create)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Portfolio Save (Create)" />
+    <MESSAGE value="Portfolio Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Portfolio Update" />
   </component>
 </project>
