@@ -45,9 +45,16 @@ export default class PortfolioListItem extends React.Component {
 
     render() {
         if(this.state.isEdit) return this.renderEdit()
+        let img
+        if(this.state.portfolio.imgBlob)
+            img = (<img src={this.state.portfolio.imgBlob} width='150px' />)
+        else
+            img = (<div> No Img </div>)
+
         return (
             <div>
                 <h2> {this.props.portfolio.name} </h2>
+                {img}
                 <input type='button' onClick={this.onChangeEdit}/>
             </div>
         )

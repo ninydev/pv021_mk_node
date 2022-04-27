@@ -28,10 +28,12 @@ app.use(logger('dev'));
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users')
 let studentRouter = require('./routes/students')
+let portfolioRouter = require('./routes/portfolio')
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/students', studentRouter);
+app.use('/api/portfolios', portfolioRouter);
 
 // DataBase
 let mongoose = require('mongoose')
@@ -40,8 +42,10 @@ mongoose.connect(
     connectionString,
     { useNewUrlParser: true, useUnifiedTopology: true },
     function (err) {
-        console.log("DB Error")
-        console.log(err)
+        if(err) {
+            console.log("DB Error")
+            console.log(err)
+        }
     }
 )
 
