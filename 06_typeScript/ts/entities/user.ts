@@ -4,5 +4,3 @@ class User{
         this.name = _name;
     }
 }
-
-const u = new User('Vasya')

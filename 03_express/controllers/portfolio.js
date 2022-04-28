@@ -15,6 +15,23 @@ exports.get = function (request, response) {
 
 // Создать
 exports.post = function (request, response) {
+    // console.error(request)
+    console.log("Body: ")
+    console.error(request.body)
+
+    let filedata = request.file;
+
+    console.log("File: ")
+    console.log(filedata);
+
+
+    response.sendStatus(200)
+
+}
+
+
+// Создать
+exports.postJsonType = function (request, response) {
     console.error(request.body)
     const newPortfolio = new portfolios (request.body)
     newPortfolio.save( function (err) {
@@ -25,3 +42,4 @@ exports.post = function (request, response) {
         response.sendStatus(201)
     })
 }
+

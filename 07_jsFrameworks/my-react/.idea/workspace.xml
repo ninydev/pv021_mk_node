@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="Portfolio Img">
+      <change afterPath="$PROJECT_DIR$/../../03_express/public/portfolio.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_typeScript/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/controllers/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/controllers/portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_typeScript/build/ts/tsc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_typeScript/build/ts/tsc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_typeScript/build/ts/tsc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_typeScript/build/ts/tsc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_typeScript/ts/entities/group.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_typeScript/ts/entities/group.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_typeScript/ts/entities/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_typeScript/ts/entities/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../03_express" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../06_typeScript" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -102,7 +112,8 @@
       <workItem from="1650559247231" duration="1617000" />
       <workItem from="1650732587827" duration="4091000" />
       <workItem from="1650985326701" duration="10266000" />
-      <workItem from="1651071644628" duration="9967000" />
+      <workItem from="1651071644628" duration="10361000" />
+      <workItem from="1651158248922" duration="2458000" />
     </task>
     <task id="LOCAL-00001" summary="React">
       <created>1650733908063</created>

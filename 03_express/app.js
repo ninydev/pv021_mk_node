@@ -13,6 +13,9 @@ app.use(express.json());
 let path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
+// File Loader
+const multer  = require("multer");
+app.use(multer({dest:"uploads"}).single("img"))
 
 // Cookie
 let cookieParser = require('cookie-parser');
