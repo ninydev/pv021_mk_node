@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="Portfolio Img">
-      <change afterPath="$PROJECT_DIR$/../../03_express/public/portfolio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_typeScript/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_express/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/437c3b4020e5e35ff9718530b8622444" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/78214f1ae8e663289298c94cfe782b1c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/9e634a86216b9c0bf3f50edad1a86fd3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/ba8c8fa24b20677dfbd1b9f49b58649f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../03_express/controllers/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/controllers/portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_express/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_express/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06_typeScript/build/ts/tsc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_typeScript/build/ts/tsc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06_typeScript/build/ts/tsc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_typeScript/build/ts/tsc.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06_typeScript/ts/entities/group.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_typeScript/ts/entities/group.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06_typeScript/ts/entities/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_typeScript/ts/entities/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/public/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/public/portfolio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

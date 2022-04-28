@@ -14,19 +14,42 @@ exports.get = function (request, response) {
 }
 
 // Создать
-exports.post = function (request, response) {
+exports.post = async function (request, response) {
     // console.error(request)
     console.log("Body: ")
     console.error(request.body)
 
-    let filedata = request.file;
+    let file = request.file;
 
     console.log("File: ")
-    console.log(filedata);
+    console.log(file);
 
+    let ex = ''
+    if(file.mimetype === "image/png") ex = '.png'
+    else if (file.mimetype === "image/jpg"|| file.mimetype === "image/jpeg") ex = '.jpg'
+    else {
+        response.sendStatus(422)
+        return
+    }
 
-    response.sendStatus(200)
+    const fs = require('fs');
+    const path = require('path');
 
+    console.log(__dirname)
+
+    let toFile = path.join(__dirname, '../public/storage/portfolio/') + file.filename + ex
+
+    await fs.copyFile(file.path, toFile, function (err) {
+        if (err) {
+            console.error(err)
+            response.send(err)
+            return
+        }
+        // Запись в базу и так далее тут
+        console.log('File copy')
+        response.send(201)
+    } )
+    // response.sendStatus(200)
 }
 
 
