@@ -24,6 +24,10 @@ exports.post = async function (request, response) {
     console.log("File: ")
     console.log(file);
 
+    if(!file) {
+        response.sendStatus(422)
+    }
+
     let ex = ''
     if(file.mimetype === "image/png") ex = '.png'
     else if (file.mimetype === "image/jpg"|| file.mimetype === "image/jpeg") ex = '.jpg'

@@ -26,6 +26,11 @@ export default class PortfolioListCreateItem extends React.Component {
     }
 
     onUploadFile(ev){
+        const state = this.state
+        state.portfolio['img'] = ev.target.value
+        state.portfolio['file'] = ev.target.files[0]
+        this.setState(state)
+
         if(FileReader){
             let fileReader = new FileReader()
             const save = this.saveDataFile
@@ -47,6 +52,22 @@ export default class PortfolioListCreateItem extends React.Component {
 
     onSave(){
 
+        // Читаю данные с формы
+        // const formData  = new FormData(document.getElementById('formPortfolio'));
+
+        // Формирую данные
+        const formData  = new FormData()
+        formData.append('name', this.state.portfolio.name)
+        // Читаю файл с формы
+        formData.append('img', document.getElementById('formImg').files[0])
+
+
+
+        // Перебирваю поля и все добавляю
+        // for(const name in this.state.portfolio) {
+        //     formData.append(name, this.state.portfolio[name]);
+        // }
+
         fetch('/api/portfolios/',
             {
                 method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -54,12 +75,13 @@ export default class PortfolioListCreateItem extends React.Component {
                 cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
                 credentials: 'same-origin', // include, *same-origin, omit
                 headers: {
-                    'Content-Type': 'application/json'
+                    //'Content-Type': 'application/json'
                     // 'Content-Type': 'application/x-www-form-urlencoded',
+                    // 'Content-Type' : 'multipart/form-data'
                 },
                 redirect: 'follow', // manual, *follow, error
                 referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-                body: JSON.stringify(this.state.portfolio) // body data type must match "Content-Type" header
+                body: formData // body data type must match "Content-Type" header
             })
             .catch(err => {console.log(err)})
 
@@ -84,18 +106,18 @@ export default class PortfolioListCreateItem extends React.Component {
         )
         let img
         if(this.state.portfolio.imgBlob)
-            img = (<img src={this.state.portfolio.imgBlob} width='150px' />)
+            img = (<img src={this.state.portfolio.imgBlob} width='150px' alt='prev' />)
         else
             img = (<div> No Img </div>)
 
         return (
-            <div>
+            <form id='formPortfolio'>
                 {img}
                 <input type="text" name="name" onChange={this.onInputChange}/>
-                <input type="file" name="imgBlob" onChange={this.onUploadFile} /><br />
+                <input type="file" name="img" onChange={this.onUploadFile} id='formImg' /><br />
                 <input type="button" value="save" onClick={this.onSave}/>
                 <div onClick={this.changeVisible}> hide </div>
-            </div>
+            </form>
         )
     }
 }

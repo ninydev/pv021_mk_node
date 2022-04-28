@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="Portfolio Img">
-      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/437c3b4020e5e35ff9718530b8622444" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/78214f1ae8e663289298c94cfe782b1c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/9e634a86216b9c0bf3f50edad1a86fd3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/ba8c8fa24b20677dfbd1b9f49b58649f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/public/storage/portfolio/197878ee8179fbe23792b2323d4ce96f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/public/storage/portfolio/496f82248f0d38533bb97149a2728d8b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/public/storage/portfolio/cdf8e47e2844c03e1c0b223dcedd04ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/197878ee8179fbe23792b2323d4ce96f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/496f82248f0d38533bb97149a2728d8b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/cdf8e47e2844c03e1c0b223dcedd04ed" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../03_express/controllers/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/controllers/portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_express/public/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/public/portfolio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +110,7 @@
       <workItem from="1650732587827" duration="4091000" />
       <workItem from="1650985326701" duration="10266000" />
       <workItem from="1651071644628" duration="10361000" />
-      <workItem from="1651158248922" duration="2458000" />
+      <workItem from="1651158248922" duration="4230000" />
     </task>
     <task id="LOCAL-00001" summary="React">
       <created>1650733908063</created>
