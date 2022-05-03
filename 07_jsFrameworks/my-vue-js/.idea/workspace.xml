@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a28791d5-497a-435e-a693-1c3bde623b22" name="Changes" comment="JS Framework">
+      <change afterPath="$PROJECT_DIR$/../../03_express/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my-react/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/models/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/models/portfolio.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../my-react/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my-react/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-react/src/components/portfolio/list/PortfolioListCreateItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../my-react/src/components/portfolio/list/PortfolioListCreateItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HelloWorld.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -34,20 +43,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path" value="node" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager" selected="npm.npm serve">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:8080">
       <method v="2" />
@@ -73,6 +78,7 @@
       <updated>1650560276890</updated>
       <workItem from="1650560278411" duration="2226000" />
       <workItem from="1650728012018" duration="5279000" />
+      <workItem from="1651590253026" duration="961000" />
     </task>
     <task id="LOCAL-00001" summary="JS Framework">
       <created>1650729872983</created>

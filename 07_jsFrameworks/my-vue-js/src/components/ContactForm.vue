@@ -1,5 +1,6 @@
 <template>
   <h2> Тут будет моя контактная форма </h2>
+  <h3> In Contact form </h3>
   <my-input></my-input>
 </template>
 

@@ -27,7 +27,7 @@ export default class PortfolioListCreateItem extends React.Component {
 
     onUploadFile(ev){
         const state = this.state
-        state.portfolio['img'] = ev.target.value
+        state.portfolio['imgName'] = ev.target.value
         state.portfolio['file'] = ev.target.files[0]
         this.setState(state)
 
@@ -60,6 +60,12 @@ export default class PortfolioListCreateItem extends React.Component {
         formData.append('name', this.state.portfolio.name)
         // Читаю файл с формы
         formData.append('img', document.getElementById('formImg').files[0])
+
+        // formData.append(
+        //     'img',
+        //     // new Blob(this.state.portfolio.imgBlob),
+        //     this.state.portfolio.imgBlob.toBlob(null),
+        //     this.state.portfolio.name)
 
 
 

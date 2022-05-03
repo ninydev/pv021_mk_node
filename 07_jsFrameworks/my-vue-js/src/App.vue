@@ -1,15 +1,15 @@
 <template>
-  <MyReactive></MyReactive>
+  <HelloWorld></HelloWorld>
 </template>
 
 <script>
-import MyReactive from "@/components/reactive/MyReactive";
+import HelloWorld from "@/components/HelloWorld";
+import "@/assets/site.css"
 
 export default {
   name: 'App',
   components: {
-    MyReactive
-
+    HelloWorld
   }
 }
 </script>

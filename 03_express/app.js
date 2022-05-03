@@ -33,10 +33,13 @@ let usersRouter = require('./routes/users')
 let studentRouter = require('./routes/students')
 let portfolioRouter = require('./routes/portfolio')
 
+let mediaHelper = require('./routes/helpers/media-converter')
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/students', studentRouter);
 app.use('/api/portfolios', portfolioRouter);
+app.use('/api/helpers/converter', mediaHelper);
 
 // DataBase
 let mongoose = require('mongoose')

@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="Portfolio Img">
-      <change afterPath="$PROJECT_DIR$/../../03_express/public/storage/portfolio/197878ee8179fbe23792b2323d4ce96f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03_express/public/storage/portfolio/496f82248f0d38533bb97149a2728d8b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03_express/public/storage/portfolio/cdf8e47e2844c03e1c0b223dcedd04ed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/197878ee8179fbe23792b2323d4ce96f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/496f82248f0d38533bb97149a2728d8b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/cdf8e47e2844c03e1c0b223dcedd04ed" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_express/controllers/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/controllers/portfolio.js" afterDir="false" />
+    <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="Portfolio Img Ajax">
+      <change afterPath="$PROJECT_DIR$/../../03_express/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/helpers/media/media-converter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/routes/helpers/media-converter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my-vue-js/src/assets/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/models/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/models/portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-vue-js/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-vue-js/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-vue-js/src/components/ContactForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/src/components/ContactForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-vue-js/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/src/components/HelloWorld.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +49,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../06_typeScript" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path" value="node" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\1\source\repos\pv021_mk_node\07_jsFrameworks\my-react\src\components\portfolio\list" />
@@ -110,7 +113,8 @@
       <workItem from="1650732587827" duration="4091000" />
       <workItem from="1650985326701" duration="10266000" />
       <workItem from="1651071644628" duration="10361000" />
-      <workItem from="1651158248922" duration="4230000" />
+      <workItem from="1651158248922" duration="5991000" />
+      <workItem from="1651590104723" duration="775000" />
     </task>
     <task id="LOCAL-00001" summary="React">
       <created>1650733908063</created>
@@ -196,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651078452645</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Portfolio Img Ajax">
+      <created>1651167224538</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1651167224538</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +236,7 @@
     <MESSAGE value="Portfolio Update" />
     <MESSAGE value="Portfolio LocalStorage" />
     <MESSAGE value="Portfolio Img" />
-    <option name="LAST_COMMIT_MESSAGE" value="Portfolio Img" />
+    <MESSAGE value="Portfolio Img Ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="Portfolio Img Ajax" />
   </component>
 </project>
