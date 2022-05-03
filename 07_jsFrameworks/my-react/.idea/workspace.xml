@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14749a9-d754-4175-89cb-c011ef909bfc" name="Changes" comment="Portfolio Img Ajax">
-      <change afterPath="$PROJECT_DIR$/../../03_express/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03_express/helpers/media/media-converter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03_express/routes/helpers/media-converter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my-vue-js/src/assets/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_express/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_express/models/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/models/portfolio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/public/file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/public/uploads/4d057ab6e372efae2844d75bdfbee9d4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/public/uploads/5896141bd50acfc9e5de9c532ebd6330" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/public/uploads/c7b58d78a4639177d8ff0897b09dadc8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/d67921e579a6266d800e2899a7e6e580" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/dd7848b6bf7c71fff82b9cc14bcb73e8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03_express/uploads/ee8d8e7fa1b587871f9005f61fb23988" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/helpers/media/media-converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/helpers/media/media-converter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../03_express/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../03_express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_express/routes/helpers/media-converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/routes/helpers/media-converter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../03_express/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_express/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/list/PortfolioListCreateItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-vue-js/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-vue-js/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-vue-js/src/components/ContactForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/src/components/ContactForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-vue-js/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-vue-js/src/components/HelloWorld.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,17 +46,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\1\source\repos\pv021_mk_node\07_jsFrameworks\my-react\src\components\portfolio\list" />
@@ -114,7 +111,7 @@
       <workItem from="1650985326701" duration="10266000" />
       <workItem from="1651071644628" duration="10361000" />
       <workItem from="1651158248922" duration="5991000" />
-      <workItem from="1651590104723" duration="775000" />
+      <workItem from="1651590104723" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="React">
       <created>1650733908063</created>
