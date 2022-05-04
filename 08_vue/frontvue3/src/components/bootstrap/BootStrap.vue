@@ -2,7 +2,7 @@
   <div class="h2 mb-0">
     <h1> Table </h1>
     <MySelect></MySelect>
-    <BButton variant="primary">Test</BButton>
+    <BButton variant="primary" @click="onCLick">Test</BButton>
 <!--    <b-icon icon="arrow-up"></b-icon>-->
 <!--    <b-icon icon="exclamation-triangle"></b-icon>-->
     <BTable :items="items">
@@ -18,6 +18,14 @@ export default {
     MySelect,
     BButton,
     BTable
+  },
+  methods: {
+    onCLick () {
+      this.$toast.success('Order placed.', {
+        // override the global option
+        position: 'top'
+      })
+    }
   },
   data () {
     return {
