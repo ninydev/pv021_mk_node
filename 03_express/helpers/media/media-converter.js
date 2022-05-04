@@ -24,20 +24,20 @@ function convertWebP(request) {
     let toFile = path.join(__dirname, '../../public/uploads', file.filename) + ".webp"
     console.log("FromFile: " + fromFile)
 
-    // im.resize({
-    //     srcPath: fromFile,
-    //     dstPath: fromFile + 'resize',
-    //     width:   256
-    // }, function(err, stdout, stderr){
-    //     if (err) {
-    //         console.log("Resize Error: ")
-    //         console.log(err)
-    //     }
-    //     console.log('resized to fit within 256x256px');
-    // });
-
-
     const result = webp.cwebp(fromFile, toFile,"-q 80",logging="-v");
+
+
+    im.resize({
+        srcPath: toFile,
+        dstPath: toFile + 'resize',
+        width:   256
+    }, function(err, stdout, stderr){
+        if (err) {
+            console.log("Resize Error: ")
+            console.log(err)
+        }
+        console.log('resized to fit within 256x256px');
+    });
     // console.log(result)
     // result.then((response) => {
     //     // console.log(response);
