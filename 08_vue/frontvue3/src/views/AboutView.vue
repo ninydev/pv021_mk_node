@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import BootStrap from '@/components/BootStrap'
+import BootStrap from '@/components/bootstrap/BootStrap'
 export default {
   components: { BootStrap }
 }
