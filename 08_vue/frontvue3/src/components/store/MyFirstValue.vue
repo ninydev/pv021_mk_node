@@ -1,5 +1,7 @@
 <template>
   <h3> Моя первая переменная в хранилище {{ myFirstValue }} </h3>
+  <button v-on:click="onBtnClick"> Commit to 10 </button>
+  <input v-model="myVModel">
 </template>
 
 <script>
@@ -12,7 +14,24 @@ export default defineComponent({
     const store = useStore()
 
     return {
-      myFirstValue: computed(() => store.getters.getMyFirstValue)
+      // просто доступ к переменной через геттер
+      myFirstValue: computed(() => store.getters.getMyFirstValue),
+      // изменение через метод
+      onBtnClick: function () {
+        store.commit('setMyFirstValue', 10)
+      },
+      // подключение через v-model
+      myVModel: computed({
+        get () {
+          console.log('get')
+          return store.getters.getMyFirstValue.toString()
+        },
+        set (data) {
+          console.log('set')
+          store.commit('setMyFirstValue', data)
+        }
+      })
+
     }
   }
 })

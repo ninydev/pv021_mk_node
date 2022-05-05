@@ -12,7 +12,7 @@ export default {
   },
   // методы смены данных через commit
   mutations: {
-    setMyFirstValue ({ state }, data) {
+    setMyFirstValue (state, data) {
       state.myFirstValue = data
     }
   },
