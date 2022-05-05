@@ -1,16 +1,16 @@
 export default {
-  namespaced: true,
+  // namespaced: true,
   // набор данных которые я хочу хранить и их начальные значения
   state: {
     myFirstValue: 0
   },
   // методы получения данных
   getters: {
-    getMyFirstValue ({ state }) {
+    getMyFirstValue (state) {
       return state.myFirstValue
     }
   },
-  // методы смены данных через  commit
+  // методы смены данных через commit
   mutations: {
     setMyFirstValue ({ state }, data) {
       state.myFirstValue = data
