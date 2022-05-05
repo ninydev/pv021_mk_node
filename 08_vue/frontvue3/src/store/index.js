@@ -1,14 +1,18 @@
 import { createStore } from 'vuex'
+import myFirstValue from '@/store/modules/myFirstValue'
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+  strict: true,
+  // Тут лечше всего что бы было пусто
+  // state: {
+  // },
+  // getters: {
+  // },
+  // mutations: {
+  // },
+  // actions: {
+  // },
   modules: {
+    myFirstValue
   }
 })
