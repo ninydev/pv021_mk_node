@@ -1,3 +1,6 @@
+import { useToast } from 'vue-toast-notification'
+const toast = useToast()
+
 export default {
   // namespaced: true,
   // набор данных которые я хочу хранить и их начальные значения
@@ -18,7 +21,13 @@ export default {
   },
   // запуск кода через dispatch
   actions: {
-    apiGetMyFirstValue ({ state }, { commit }, { dispatch }, data) {
+    apiGetMyFirstValue ({ state, commit, dispatch }) {
+      console.log('Get Data')
+      commit('setMyFirstValue', 'получил')
+      toast.success('Order placed.', {
+        // override the global option
+        position: 'top'
+      })
       // тут будет получение с сервера
     }
   }
