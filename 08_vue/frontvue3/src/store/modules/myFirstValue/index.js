@@ -5,7 +5,7 @@ export default {
   // namespaced: true,
   // набор данных которые я хочу хранить и их начальные значения
   state: {
-    myFirstValue: 0
+    myFirstValue: JSON.parse(localStorage.getItem('myFirstValue')) || 0
   },
   // методы получения данных
   getters: {
@@ -16,6 +16,7 @@ export default {
   // методы смены данных через commit
   mutations: {
     setMyFirstValue (state, data) {
+      localStorage.setItem('myFirstValue', JSON.stringify(data))
       state.myFirstValue = data
     }
   },
@@ -23,6 +24,8 @@ export default {
   actions: {
     apiGetMyFirstValue ({ state, commit, dispatch }) {
       console.log('Get Data')
+      // fetch()
+      //   .then()
       commit('setMyFirstValue', 'получил')
       toast.success('Order placed.', {
         // override the global option
