@@ -1,6 +1,8 @@
 import { createStore } from 'vuex'
 import myFirstValue from '@/store/modules/myFirstValue'
 import toasts from '@/store/toasts'
+import logs from '@/store/logs'
+import songLyrics from '@/store/modules/songLyrics'
 
 export default createStore({
   strict: true,
@@ -15,6 +17,8 @@ export default createStore({
   // },
   modules: {
     myFirstValue,
-    toasts
+    songLyrics,
+    toasts,
+    logs
   }
 })

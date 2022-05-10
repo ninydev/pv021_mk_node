@@ -1,3 +1,5 @@
+import ajax from '@/store/ajax'
+
 export default {
   // namespaced: true,
   // набор данных которые я хочу хранить и их начальные значения
@@ -21,6 +23,7 @@ export default {
   actions: {
     apiGetMyFirstValue ({ state, commit, dispatch }) {
       console.log('Get Data')
+      ajax.get('url')
       // fetch()
       //   .then()
       commit('setMyFirstValue', 'получил')
