@@ -70,7 +70,10 @@ export default {
         .then(response => {
           commit('setSongLyrics', response.response.hits)
         })
-        .catch(err => console.error(err))
+        .catch(err => {
+          console.error(err)
+          dispatch('errorLogAjax', '403')
+        })
     }
   }
 }
