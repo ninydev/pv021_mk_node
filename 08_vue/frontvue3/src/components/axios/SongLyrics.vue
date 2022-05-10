@@ -1,7 +1,7 @@
 <template>
   <input v-model="songLyricsQuery"><br>
   <span v-if="err">{{err}}</span><br>
-  <button :disabled=isDis> Send </button><br>
+  <button :disabled=isDis @click="doQuery"> Send </button><br>
 </template>
 
 <script>
@@ -22,7 +22,8 @@ export default {
         set (data) {
           store.commit('setSongLyricsQuery', data)
         }
-      })
+      }),
+      doQuery: () => store.dispatch('apiGetSongLyrics')
     }
   }
 }
