@@ -3,6 +3,7 @@
   <button v-on:click="onBtnClick"> Commit to 10 </button>
   <input v-model="myVModel">
   <button @click="onBtnUpdate"> Update </button>
+  <button @click="putToast"> Toast </button>
 </template>
 
 <script>
@@ -15,6 +16,9 @@ export default defineComponent({
     const store = useStore()
 
     return {
+      putToast: function () {
+        store.dispatch('toastInfo', 'Hello')
+      },
       // просто доступ к переменной через геттер
       myFirstValue: computed(() => store.getters.getMyFirstValue),
       // изменение через метод

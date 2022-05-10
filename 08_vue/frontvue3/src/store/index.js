@@ -1,9 +1,10 @@
 import { createStore } from 'vuex'
 import myFirstValue from '@/store/modules/myFirstValue'
+import toasts from '@/store/toasts'
 
 export default createStore({
   strict: true,
-  // Тут лечше всего что бы было пусто
+  // Тут лучше всего что бы было пусто
   // state: {
   // },
   // getters: {
@@ -13,6 +14,7 @@ export default createStore({
   // actions: {
   // },
   modules: {
-    myFirstValue
+    myFirstValue,
+    toasts
   }
 })
