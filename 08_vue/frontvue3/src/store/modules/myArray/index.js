@@ -4,8 +4,14 @@ export default {
     myArrayPop: null
   },
   getters: {
-    getMyArray (state) {
-      return state.myArray
+    // getMyArray (state) {
+    //   return state.myArray
+    // },
+    getMyArray: (state) => (strFilter) => {
+      if (strFilter.length === 0) { return state.myArray }
+      return state.myArray.filter(el => {
+        return el.name.includes(strFilter)
+      })
     },
     getMyArrayLen (state) {
       return state.myArray.length

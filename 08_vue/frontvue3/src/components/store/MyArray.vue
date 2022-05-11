@@ -1,10 +1,14 @@
 <template>
   <h1> My Array</h1>
+  <div>
+  <label> Filter </label>
+    <input v-model="strFilter">
+  </div>
   <ul>
     <li v-for="(el, index) in myArray" :key="el.id">
-      {{ el.name }}
+      {{index}}  {{ el.name }}
       <button :value=el.id @click="delId"> - id </button>
-      <button :value=index @click="delIndex"> - index </button>
+      <!-- <button :value=index @click="delIndex"> - index </button> -->
     </li>
   </ul>
   <div>
@@ -25,14 +29,17 @@ export default {
   name: 'MyArray',
   setup () {
     const store = useStore()
-    const str = ref('new Element')
+    const strPush = ref('new Element')
+    const strFilter = ref('')
 
     return {
-      myArray: computed(() => store.getters.getMyArray),
-      newElement: str,
+      // myArray: computed(() => store.getters.getMyArray),
+      myArray: computed(() => store.getters.getMyArray(strFilter.value)),
+      strFilter: strFilter,
+      newElement: strPush,
       push: function () {
         store.commit('setMyArrayPush',
-          { name: str.value, id: generateUUID() }
+          { name: strPush.value, id: generateUUID() }
         )
       },
       pop: function () {
