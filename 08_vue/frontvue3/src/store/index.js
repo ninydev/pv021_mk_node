@@ -3,6 +3,7 @@ import myFirstValue from '@/store/modules/myFirstValue'
 import toasts from '@/store/toasts'
 import logs from '@/store/logs'
 import songLyrics from '@/store/modules/songLyrics'
+import myArray from '@/store/modules/myArray'
 
 export default createStore({
   strict: true,
@@ -17,6 +18,7 @@ export default createStore({
   // },
   modules: {
     myFirstValue,
+    myArray,
     songLyrics,
     toasts,
     logs
