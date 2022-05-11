@@ -37,6 +37,7 @@ export default {
         el => { return el.id !== id }
       )
       localStorage.setItem('myArray', JSON.stringify(state.myArray))
+      this.dispatch('toastSuccess', 'del')
     }
   },
   actions: {
