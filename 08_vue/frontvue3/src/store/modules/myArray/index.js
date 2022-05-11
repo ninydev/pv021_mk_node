@@ -10,7 +10,7 @@ export default {
     getMyArrayLen (state) {
       return state.myArray.length
     },
-    getWorkElement (state) {
+    getMyArrayPop (state) {
       return state.workElement
     }
   },
@@ -26,7 +26,25 @@ export default {
     getMyArrayPop (state, data = null) {
       state.myArrayPop = state.myArray.pop()
       localStorage.setItem('myArray', JSON.stringify(state.myArray))
+    },
+    setMyArrayClear (state, data = null) {
+      state.myArray = []
+      state.myArrayPop = null
+      localStorage.removeItem('myArray')
+    },
+    setMyArrayDelId (state, id) {
+      state.myArray = state.myArray.filter(
+        el => { return el.id !== id }
+      )
+      localStorage.setItem('myArray', JSON.stringify(state.myArray))
     }
   },
-  actions: {}
+  actions: {
+    apiGetMyArray () {
+
+    },
+    apiSendMyArray () {
+
+    }
+  }
 }
