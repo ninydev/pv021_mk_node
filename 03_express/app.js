@@ -26,6 +26,11 @@ app.use(cookieParser());
 let logger = require('morgan');
 app.use(logger('dev'));
 
+// Auth
+let auth = require('./controllers/auth')
+app.use(auth.middlewareAuth)
+app.post ('/api/auth', auth.authByLogin)
+
 
 // Router
 let indexRouter = require('./routes/index');
@@ -41,8 +46,11 @@ app.use('/students', studentRouter);
 app.use('/api/portfolios', portfolioRouter);
 app.use('/api/helpers/converter', mediaHelper);
 
+
+
 // DataBase
 let mongoose = require('mongoose')
+const {authByLogin} = require("./controllers/auth");
 let connectionString = "mongodb+srv://userdb:QweAsdZxc!23@cluster0.wedqv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 mongoose.connect(
     connectionString,
