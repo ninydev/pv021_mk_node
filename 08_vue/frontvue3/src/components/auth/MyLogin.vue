@@ -24,13 +24,13 @@
 
           <!-- Email input -->
           <div class="form-outline mb-4">
-            <input type="email" id="loginName" class="form-control" />
+            <input v-model="email" type="email" id="loginName" class="form-control" />
             <label class="form-label" for="loginName">Email or username</label>
           </div>
 
           <!-- Password input -->
           <div class="form-outline mb-4">
-            <input type="password" id="loginPassword" class="form-control" />
+            <input v-model="password" type="password" id="loginPassword" class="form-control" />
             <label class="form-label" for="loginPassword">Password</label>
           </div>
 
@@ -51,7 +51,7 @@
           </div>
 
           <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+          <button @click="tryLogin" type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
 
           <!-- Register buttons -->
           <div class="text-center">
@@ -62,8 +62,34 @@
 </template>
 
 <script>
+import { useStore } from 'vuex'
+import { computed } from 'vue'
+
 export default {
-  name: 'MyLogin'
+  name: 'MyLogin',
+  setup () {
+    const store = useStore()
+    return {
+      tryLogin: () => { store.dispatch('apiTryLogin') },
+      email: computed({
+        get () {
+          return store.getters.email
+        },
+        set (data) {
+          store.commit('email', data)
+        }
+      }),
+      password: computed({
+        get () {
+          return store.getters.password
+        },
+        set (data) {
+          store.commit('password', data)
+        }
+      })
+      // TODO вывод ошибки
+    }
+  }
 }
 </script>
 

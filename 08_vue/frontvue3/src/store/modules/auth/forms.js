@@ -81,6 +81,39 @@ export default {
         .then(res => res.json())
         .then(json => {
           console.log(json)
+          dispatch('toastSuccess', ' user Create')
+          // TODO  уйти на другой маршрут, сообщить что все хорошо
+        })
+        .catch(err => {
+          dispatch('errorLogAjax', err)
+        })
+    },
+    apiTryLogin ({ state, commit, dispatch }) {
+      const user = {
+        email: state.email,
+        password: state.password
+      }
+      fetch('http://localhost:4000/api/auth', {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        mode: 'cors', // no-cors, *cors, same-origin
+        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'same-origin', // include, *same-origin, omit
+        headers: {
+          'Content-Type': 'application/json'
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        redirect: 'follow', // manual, *follow, error
+        referrerPolicy: 'no-referrer', // no-referrer, *client
+        body: JSON.stringify(user) // body data type must match "Content-Type" header
+      })
+        .then(res => {
+          if (res.status === 200) { return res.json() } else { dispatch('toastInfo', 'JWT Not Ready') }
+        }
+        )
+        .then(json => {
+          console.log(json)
+          dispatch('toastSuccess', ' JWT Ready ')
+          // TODO  уйти на другой маршрут, сообщить что все хорошо
         })
         .catch(err => {
           dispatch('errorLogAjax', err)

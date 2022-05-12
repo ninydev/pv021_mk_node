@@ -27,32 +27,44 @@ exports.middlewareAuth = async function (req, res, next) {
 }
 
 exports.authByLogin = async function (req, res){
-    for (let user of users) {
-        if (
-            req.body.email === user.email &&
-            req.body.password === user.password
-        ) {
-            let head = Buffer.from(
-                JSON.stringify({ alg: 'HS256', typ: 'jwt' })
-            ).toString('base64')
-            // todo: Может не всего пользователя
-            let body = Buffer.from(JSON.stringify(user)).toString(
-                'base64'
-            )
-            let signature = crypto
-                .createHmac('SHA256', tokenKey)
-                .update(`${head}.${body}`)
-                .digest('base64')
 
-            return res.status(200).json({
-                id: user._id,
-                email: user.email,
-                token: `${head}.${body}.${signature}`,
-            })
+    const email = req.body.email
+    const password = req.body.password
+
+
+    users.findOne( {email: email, password: password},function(err, user) {
+        if (err) {
+            console.error(err)
+            return res.status(500).json({ message: 'DB Error' })
         }
-    }
+        // console.log('Get User:')
+        // console.log(user)
 
-    return res.status(404).json({ message: 'User not found' })
+        if(!user) {
+            return res.status(404).json({ message: 'User Not Find' })
+        }
+
+        let head = Buffer.from(
+            JSON.stringify({ alg: 'HS256', typ: 'jwt' })
+        ).toString('base64')
+        // todo: Может не всего пользователя
+        let body = Buffer.from(JSON.stringify(user)).toString(
+            'base64'
+        )
+        let signature = crypto
+            .createHmac('SHA256', tokenKey)
+            .update(`${head}.${body}`)
+            .digest('base64')
+
+        return res.status(200).json({
+            id: user._id,
+            email: user.email,
+            token: `${head}.${body}.${signature}`,
+        })
+
+    })
+
+    // return res.status(404).json({ message: 'User not found' })
 }
 
 
