@@ -56,9 +56,9 @@ exports.authByLogin = async function (req, res){
             .update(`${head}.${body}`)
             .digest('base64')
 
+        user.password = null
         return res.status(200).json({
-            id: user._id,
-            email: user.email,
+            user: user,
             token: `${head}.${body}.${signature}`,
         })
 

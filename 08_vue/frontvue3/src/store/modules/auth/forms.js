@@ -23,7 +23,7 @@ export default {
     errPassword: (state) => state.errPassword
   },
   mutations: {
-    email: (state, data) => { state.email = data; console.log(data) },
+    email: (state, data) => { state.email = data },
     password: (state, data) => { state.password = data },
     repeatPassword: (state, data) => { state.repeatPassword = data },
     registerCheck: (state, data) => { state.registerCheck = data },
@@ -111,8 +111,11 @@ export default {
         }
         )
         .then(json => {
+          if (!json) return
           console.log(json)
           dispatch('toastSuccess', ' JWT Ready ')
+          commit('JwtToken', json.token)
+          commit('user', json.user)
           // TODO  уйти на другой маршрут, сообщить что все хорошо
         })
         .catch(err => {
