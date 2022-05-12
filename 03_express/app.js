@@ -2,6 +2,9 @@
 let express = require('express');
 let app = express();
 
+// Cors
+let cors = require('cors')
+app.use(cors())
 
 // JSON
 const bodyParser = require('body-parser')
