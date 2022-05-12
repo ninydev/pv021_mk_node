@@ -73,7 +73,7 @@ exports.tryCreateUser = async function (req, res ){
             return err
         }
         // TODO: отослать письмо на почту, что бы проверить валидность
-        response.sendStatus(201)
+        res.status(201).json(newUser)
     })
 }
 

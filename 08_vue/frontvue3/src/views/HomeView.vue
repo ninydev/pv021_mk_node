@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <SongLyrics></SongLyrics>
+    <MyRegister></MyRegister>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import SongLyrics from '@/components/axios/SongLyrics'
+import MyRegister from '@/components/auth/MyRegister'
 
 export default {
   name: 'HomeView',
   components: {
-    SongLyrics
+    MyRegister
   }
 }
 </script>
