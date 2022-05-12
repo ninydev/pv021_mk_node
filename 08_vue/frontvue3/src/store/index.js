@@ -4,6 +4,7 @@ import toasts from '@/store/toasts'
 import logs from '@/store/logs'
 import songLyrics from '@/store/modules/songLyrics'
 import myArray from '@/store/modules/myArray'
+import auth from '@/store/modules/auth'
 
 export default createStore({
   strict: true,
@@ -21,6 +22,7 @@ export default createStore({
     myArray,
     songLyrics,
     toasts,
-    logs
+    logs,
+    auth
   }
 })

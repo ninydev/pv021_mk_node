@@ -22,25 +22,25 @@
 
     <!-- Email input -->
     <div class="form-outline mb-4">
-      <input type="email" id="registerEmail" class="form-control" />
+      <input v-model="email" type="email" id="registerEmail" class="form-control" />
       <label class="form-label" for="registerEmail">Email</label>
     </div>
 
     <!-- Password input -->
     <div class="form-outline mb-4">
-      <input type="password" id="registerPassword" class="form-control" />
+      <input v-model="password" type="password" id="registerPassword" class="form-control" />
       <label class="form-label" for="registerPassword">Password</label>
     </div>
 
     <!-- Repeat Password input -->
     <div class="form-outline mb-4">
-      <input type="password" id="registerRepeatPassword" class="form-control" />
+      <input v-model="repeatPassword" type="password" id="registerRepeatPassword" class="form-control" />
       <label class="form-label" for="registerRepeatPassword">Repeat password</label>
     </div>
 
     <!-- Checkbox -->
     <div class="form-check d-flex justify-content-center mb-4">
-      <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck"
+      <input v-model="registerCheck" class="form-check-input me-2" type="checkbox" value="" id="registerCheck"
              aria-describedby="registerCheckHelpText" />
       <label class="form-check-label" for="registerCheck">
         I have read and agree to the terms
@@ -54,8 +54,48 @@
 </template>
 
 <script>
+import { useStore } from 'vuex'
+import { computed } from 'vue'
+
 export default {
-  name: 'MyRegister'
+  name: 'MyRegister',
+  setup () {
+    const store = useStore()
+    return {
+      email: computed({
+        get () {
+          return store.getters.email
+        },
+        set (data) {
+          store.commit('email', data)
+        }
+      }),
+      password: computed({
+        get () {
+          return store.getters.password
+        },
+        set (data) {
+          store.commit('password', data)
+        }
+      }),
+      repeatPassword: computed({
+        get () {
+          return store.getters.repeatPassword
+        },
+        set (data) {
+          store.commit('repeatPassword', data)
+        }
+      }),
+      registerCheck: computed({
+        get () {
+          return store.getters.registerCheck
+        },
+        set (data) {
+          store.commit('registerCheck', data)
+        }
+      })
+    }
+  }
 }
 </script>
 
