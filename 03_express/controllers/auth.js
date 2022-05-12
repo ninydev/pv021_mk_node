@@ -1,23 +1,7 @@
 let crypto = require('crypto')
 const tokenKey = '1a2b-3c4d-5e6f-7g8h'
 
-let tmpUsers = [
-    {
-        "id": 1,
-        "login": "user1",
-        "password": "password1"
-    },
-    {
-        "id": 2,
-        "login": "user2",
-        "password": "password2"
-    },
-    {
-        "id": 3,
-        "login": "user3",
-        "password": "password3"
-    }
-]
+const users = require('../models/user')
 
 exports.middlewareAuth = async function (req, res, next) {
     console.log(req.headers.authorization)
@@ -43,14 +27,15 @@ exports.middlewareAuth = async function (req, res, next) {
 }
 
 exports.authByLogin = async function (req, res){
-    for (let user of tmpUsers) {
+    for (let user of users) {
         if (
-            req.body.login === user.login &&
+            req.body.email === user.email &&
             req.body.password === user.password
         ) {
             let head = Buffer.from(
                 JSON.stringify({ alg: 'HS256', typ: 'jwt' })
             ).toString('base64')
+            // todo: Может не всего пользователя
             let body = Buffer.from(JSON.stringify(user)).toString(
                 'base64'
             )
@@ -60,8 +45,8 @@ exports.authByLogin = async function (req, res){
                 .digest('base64')
 
             return res.status(200).json({
-                id: user.id,
-                login: user.login,
+                id: user._id,
+                email: user.email,
                 token: `${head}.${body}.${signature}`,
             })
         }
@@ -70,5 +55,26 @@ exports.authByLogin = async function (req, res){
     return res.status(404).json({ message: 'User not found' })
 }
 
+
+exports.tryCreateUser = async function (req, res ){
+    const email = req.body.email
+    const password = req.body.password
+
+    // TODO: Организовать проверки
+
+    const newUser = new users()
+    newUser.email = email
+    newUser.password = password
+    newUser.isVerify = false
+
+    newUser.save( function (err) {
+        if(err) {
+            console.error(err)
+            return err
+        }
+        // TODO: отослать письмо на почту, что бы проверить валидность
+        response.sendStatus(201)
+    })
+}
 
 
