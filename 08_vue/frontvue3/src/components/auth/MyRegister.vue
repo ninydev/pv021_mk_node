@@ -67,7 +67,7 @@ export default {
           return store.getters.email
         },
         set (data) {
-          store.commit('email', data)
+          store.dispatch('email', data)
         }
       }),
       password: computed({
@@ -75,7 +75,7 @@ export default {
           return store.getters.password
         },
         set (data) {
-          store.commit('password', data)
+          store.dispatch('password', data)
         }
       }),
       repeatPassword: computed({
@@ -83,7 +83,7 @@ export default {
           return store.getters.repeatPassword
         },
         set (data) {
-          store.commit('repeatPassword', data)
+          store.dispatch('repeatPassword', data)
         }
       }),
       registerCheck: computed({
@@ -91,7 +91,7 @@ export default {
           return store.getters.registerCheck
         },
         set (data) {
-          store.commit('registerCheck', data)
+          store.dispatch('registerCheck', data)
         }
       })
     }
