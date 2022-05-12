@@ -48,7 +48,7 @@
     </div>
 
     <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+    <button @click="tryCreateUser" :disabled="canSendForm" type="button" class="btn btn-primary btn-block mb-3">Sign in</button>
   </form>
 </div>
 </template>
@@ -62,6 +62,8 @@ export default {
   setup () {
     const store = useStore()
     return {
+      tryCreateUser: () => { store.dispatch('apiTryCrateUser') },
+      canSendForm: computed(() => !store.getters.canRegister),
       email: computed({
         get () {
           return store.getters.email
@@ -94,6 +96,7 @@ export default {
           store.dispatch('registerCheck', data)
         }
       })
+      // TODO вывод ошибки
     }
   }
 }

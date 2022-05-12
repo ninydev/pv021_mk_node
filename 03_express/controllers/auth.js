@@ -67,6 +67,8 @@ exports.tryCreateUser = async function (req, res ){
     newUser.password = password
     newUser.isVerify = false
 
+    console.log(newUser)
+
     newUser.save( function (err) {
         if(err) {
             console.error(err)
