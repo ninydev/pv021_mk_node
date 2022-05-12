@@ -30,6 +30,7 @@ app.use(logger('dev'));
 let auth = require('./controllers/auth')
 app.use(auth.middlewareAuth)
 app.post ('/api/auth', auth.authByLogin)
+app.post ('/api/tryCreateUser', auth.tryCreateUser)
 
 
 // Router
