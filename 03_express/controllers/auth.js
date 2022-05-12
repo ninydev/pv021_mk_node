@@ -6,6 +6,7 @@ const users = require('../models/user')
 exports.middlewareAuth = async function (req, res, next) {
     console.log(req.headers.authorization)
     if (req.headers.authorization) {
+        // console.log(req.headers.authorization)
         let tokenParts = req.headers.authorization
             .split('.')
             //.split('.')
@@ -14,7 +15,13 @@ exports.middlewareAuth = async function (req, res, next) {
             .update(`${tokenParts[0]}.${tokenParts[1]}`)
             .digest('base64')
 
-        if (signature === tokenParts[2])
+        console.log('in Auth')
+        console.log(JSON.parse(
+            Buffer.from(tokenParts[1], 'base64').toString(
+                'utf8'
+            )))
+
+        // if (signature === tokenParts[2])
             req.user = JSON.parse(
                 Buffer.from(tokenParts[1], 'base64').toString(
                     'utf8'
@@ -32,13 +39,14 @@ exports.authByLogin = async function (req, res){
     const password = req.body.password
 
 
-    users.findOne( {email: email, password: password},function(err, user) {
+    users.findOne( {email: email, password: password},
+        function(err, user) {
         if (err) {
             console.error(err)
             return res.status(500).json({ message: 'DB Error' })
         }
-        // console.log('Get User:')
-        // console.log(user)
+        console.log('Get User:')
+        console.log(user)
 
         if(!user) {
             return res.status(404).json({ message: 'User Not Find' })
@@ -56,7 +64,6 @@ exports.authByLogin = async function (req, res){
             .update(`${head}.${body}`)
             .digest('base64')
 
-        user.password = null
         return res.status(200).json({
             user: user,
             token: `${head}.${body}.${signature}`,

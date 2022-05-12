@@ -11,12 +11,17 @@
 
 <script>
 import PortfolioItem from '@/components/portfolio/PortfolioItem'
+import { useStore } from 'vuex'
+import { computed } from 'vue'
+
 export default {
   name: 'PortfolioList',
   components: { PortfolioItem },
-  data () {
+  setup () {
+    const store = useStore()
+    store.dispatch('apiGetPortfolioItems')
     return {
-      items: [{ id: 1, name: 'pic' }, { id: 2, name: 'pic2' }]
+      items: computed(() => store.getters.portfolioItem)
     }
   }
 }

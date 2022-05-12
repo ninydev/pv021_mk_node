@@ -2,11 +2,12 @@ const portfolios = require('../models/portfolio')
 
 // Вернуть всех
 exports.get = function (request, response) {
+    console.log("get")
     console.log(request.user)
-    if(!request.user) {
-        return response.status(401)
-            .json({ message: 'Not authorized' })
-    }
+    // if(!request.user) {
+    //     return response.status(401)
+    //         .json({ message: 'Not authorized' })
+    // }
     portfolios.find({},
         function (err, all) {
             if(err) {
