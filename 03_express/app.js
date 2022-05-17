@@ -4,7 +4,7 @@ let app = express();
 
 // Cors
 let cors = require('cors')
-app.use(cors())
+app.use(cors({origin: '*'}))
 
 // JSON
 const bodyParser = require('body-parser')
@@ -37,7 +37,7 @@ app.post ('/api/tryCreateUser', auth.tryCreateUser)
 
 
 // Router
-let indexRouter = require('./routes/index');
+let indexRouter = require('./routes/index')
 let usersRouter = require('./routes/users')
 let studentRouter = require('./routes/students')
 let portfolioRouter = require('./routes/portfolio')
@@ -54,7 +54,6 @@ app.use('/api/helpers/converter', mediaHelper);
 
 // DataBase
 let mongoose = require('mongoose')
-const {authByLogin} = require("./controllers/auth");
 let connectionString = "mongodb+srv://userdb:QweAsdZxc!23@cluster0.wedqv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 mongoose.connect(
     connectionString,

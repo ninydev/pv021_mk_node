@@ -1,7 +1,7 @@
 import forms from '@/store/modules/auth/forms'
 export default {
   state: {
-    JwtToken: JSON.parse(localStorage.getItem('JwtToken')) || null,
+    JwtToken: localStorage.getItem('JwtToken') || null,
     user: JSON.parse(localStorage.getItem('user')) || null
   },
   getters: {
@@ -11,7 +11,7 @@ export default {
   mutations: {
     JwtToken: (state, data) => {
       state.JwtToken = data
-      localStorage.setItem('JwtToken', JSON.stringify(data))
+      localStorage.setItem('JwtToken', data)
     },
     user: (state, data) => {
       state.user = data
