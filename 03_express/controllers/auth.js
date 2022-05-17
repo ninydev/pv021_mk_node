@@ -100,6 +100,7 @@ exports.tryCreateUser = async function (req, res ){
     newUser.email = email
     newUser.password = password
     newUser.isVerify = false
+    newUser.updated_at = Date.now()
 
     console.log(newUser)
 

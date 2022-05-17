@@ -13,8 +13,8 @@ const im = require('imagemagick');
 function convertWebP(request) {
     let file = request.file;
 
-    // console.log("File: ")
-    // console.log(file);
+    console.log("File: ")
+    console.log(file);
 
     if(!file) {
         return 422
@@ -26,18 +26,17 @@ function convertWebP(request) {
 
     const result = webp.cwebp(fromFile, toFile,"-q 80",logging="-v");
 
-
-    im.resize({
-        srcPath: toFile,
-        dstPath: toFile + 'resize',
-        width:   256
-    }, function(err, stdout, stderr){
-        if (err) {
-            console.log("Resize Error: ")
-            console.log(err)
-        }
-        console.log('resized to fit within 256x256px');
-    });
+    // im.resize({
+    //     srcPath: toFile,
+    //     dstPath: toFile + 'resize',
+    //     width:   256
+    // }, function(err, stdout, stderr){
+    //     if (err) {
+    //         console.log("Resize Error: ")
+    //         console.log(err)
+    //     }
+    //     console.log('resized to fit within 256x256px');
+    // });
     // console.log(result)
     // result.then((response) => {
     //     // console.log(response);
@@ -50,12 +49,14 @@ function convertWebP(request) {
 
 // avatar - 100x100
 exports.avatar = function (request, response) {
+    console.log(request.file)
     let resultImg = convertWebP(request)
     console.log("Code return " + resultImg)
     if( resultImg === 201) {
-        response.send(JSON.stringify({filename: "/uploads/" + request.file.filename + ".webp"}))
+        return response.send(JSON.stringify(
+            {filename: "/uploads/" + request.file.filename + ".webp"}))
     }
-    response.statusCode = resultImg
+    return response.statusCode = resultImg
 }
 
 // post - thumb - 256x256, holder - 1200x256

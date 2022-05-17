@@ -1,10 +1,12 @@
 <template>
-
+  <MyAvatar></MyAvatar>
 </template>
 
 <script>
+import MyAvatar from '@/components/auth/MyAvatar'
 export default {
-  name: 'MyProfile'
+  name: 'MyProfile',
+  components: { MyAvatar }
 }
 </script>
 

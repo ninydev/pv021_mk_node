@@ -6,6 +6,7 @@ import songLyrics from '@/store/modules/songLyrics'
 import myArray from '@/store/modules/myArray'
 import auth from '@/store/modules/auth'
 import portfolio from '@/store/modules/portfolio'
+import profile from '@/store/modules/profile'
 
 export default createStore({
   strict: true,
@@ -25,6 +26,7 @@ export default createStore({
     toasts,
     logs,
     auth,
-    portfolio
+    portfolio,
+    profile
   }
 })
