@@ -88,7 +88,6 @@ exports.authByLogin = async function (req, res){
     // return res.status(404).json({ message: 'User not found' })
 }
 
-
 exports.tryCreateUser = async function (req, res ){
     console.log('tryCreateUser')
     const email = req.body.email

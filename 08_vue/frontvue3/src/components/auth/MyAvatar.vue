@@ -20,7 +20,7 @@ export default {
         if (img) {
           console.log('getter')
           console.log(store.getters.newFileAvatar)
-          return 'http://localhost:4000' + img + '?' + Math.random()
+          return 'http://localhost:4000/uploads' + img + '?' + Math.random()
         }
         return null
       }),

@@ -58,7 +58,7 @@ exports.avatar = async function (request, response) {
     if (resultImg === 201) {
         await sleep(2000);
         return response.send(JSON.stringify(
-            {filename: "/uploads/" + request.file.filename + ".webp"}))
+            {filename: "/" + request.file.filename + ".webp"}))
     }
     return response.statusCode = resultImg
 }
