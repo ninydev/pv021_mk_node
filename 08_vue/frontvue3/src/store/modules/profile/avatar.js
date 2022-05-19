@@ -1,6 +1,7 @@
 
 export default {
   state: {
+    fileName: null
   },
   getters: {
     currentAvatarUrl: (state) => {
@@ -10,9 +11,17 @@ export default {
         }
       }
       return null
+    },
+    newFileAvatar: (state) => {
+      if (state.fileName) { return state.fileName }
+      return null
     }
   },
   mutations: {
+    fileName: (state, data) => {
+      state.fileName = data
+      console.log(state.fileName)
+    }
   },
   actions: {
     apiUploadAvatar ({ state, commit, dispatch }, data) {
@@ -37,7 +46,8 @@ export default {
       })
         .then(res => res.json())
         .then(json => {
-          console.log(json)
+          console.log(json.filename)
+          commit('fileName', json.filename)
           dispatch('toastSuccess', ' Avatar Uploads ')
           // TODO  уйти на другой маршрут, сообщить что все хорошо
         })

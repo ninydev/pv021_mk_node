@@ -46,13 +46,17 @@ function convertWebP(request) {
     return 201
 }
 
+async function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 // avatar - 100x100
-exports.avatar = function (request, response) {
+exports.avatar = async function (request, response) {
     console.log(request.file)
     let resultImg = convertWebP(request)
     console.log("Code return " + resultImg)
-    if( resultImg === 201) {
+    if (resultImg === 201) {
+        await sleep(2000);
         return response.send(JSON.stringify(
             {filename: "/uploads/" + request.file.filename + ".webp"}))
     }

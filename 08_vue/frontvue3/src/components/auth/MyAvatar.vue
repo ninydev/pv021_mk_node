@@ -1,6 +1,7 @@
 <template>
   <div>
-    <img src="{{currentAvatarUrl}}">
+    <img v-if="currentAvatarUrl" v-bind:src={currentAvatarUrl} alt="curAvatar">
+    <img v-if="fileName" v-bind:src=fileName alt="newAvatar">
     <input type="file" @change="uploadAvatar" >
   </div>
 </template>
@@ -14,6 +15,15 @@ export default {
   setup () {
     const store = useStore()
     return {
+      fileName: computed(() => {
+        const img = store.getters.newFileAvatar
+        if (img) {
+          console.log('getter')
+          console.log(store.getters.newFileAvatar)
+          return 'http://localhost:4000' + img + '?' + Math.random()
+        }
+        return null
+      }),
       currentAvatarUrl: computed(() => store.getters.currentAvatarUrl),
       uploadAvatar: function (e) {
         const files = e.target.files || e.dataTransfer.files
