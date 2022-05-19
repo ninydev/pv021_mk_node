@@ -4,10 +4,12 @@ export default {
     fileName: null
   },
   getters: {
-    currentAvatarUrl: (state) => {
-      if (state.user) { // если я залогинен
-        if (state.user.avatar) { // если у меня есть аватар
-          return state.user.avatar + '?updated_at=' + state.user.updated_at
+    currentAvatarUrl: (state, getters) => {
+      console.log('Avatar')
+      console.log(getters.user)
+      if (getters.user) { // если я залогинен
+        if (getters.user.avatar) { // если у меня есть аватар
+          return getters.user.avatar // + '?updated_at=' + state.user.updated_at
         }
       }
       return null

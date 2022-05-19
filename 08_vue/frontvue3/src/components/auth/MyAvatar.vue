@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img v-if="currentAvatarUrl" v-bind:src={currentAvatarUrl} alt="curAvatar">
+    <img v-if="currentAvatarUrl" v-bind:src=currentAvatarUrl alt="curAvatar">
     <img v-if="fileName" v-bind:src=fileName alt="newAvatar">
     <input type="file" @change="uploadAvatar" >
     <button type="button" @click="saveAvatar"> Save Avatar</button>
@@ -28,7 +28,7 @@ export default {
         }
         return null
       }),
-      currentAvatarUrl: computed(() => store.getters.currentAvatarUrl),
+      currentAvatarUrl: computed(() => 'http://localhost:4000/storage/avatars' + store.getters.currentAvatarUrl),
       uploadAvatar: function (e) {
         const files = e.target.files || e.dataTransfer.files
         if (!files.length) return

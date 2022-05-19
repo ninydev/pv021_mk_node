@@ -3,8 +3,7 @@ export default {
     portfolioItem: JSON.parse(localStorage.getItem('portfolioItem')) || []
   },
   getters: {
-    portfolioItem: (state) => state.portfolioItem,
-    user: (state) => state.user
+    portfolioItem: (state) => state.portfolioItem
   },
   mutations: {
     portfolioItem: (state, data) => {
