@@ -3,6 +3,7 @@
     <img v-if="currentAvatarUrl" v-bind:src={currentAvatarUrl} alt="curAvatar">
     <img v-if="fileName" v-bind:src=fileName alt="newAvatar">
     <input type="file" @change="uploadAvatar" >
+    <button type="button" @click="saveAvatar"> Save Avatar</button>
   </div>
 </template>
 
@@ -15,6 +16,9 @@ export default {
   setup () {
     const store = useStore()
     return {
+      saveAvatar: function () {
+        store.dispatch('apiUpdateAvatar')
+      },
       fileName: computed(() => {
         const img = store.getters.newFileAvatar
         if (img) {

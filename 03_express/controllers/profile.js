@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const users = require('../models/user');
 
-exports.updateAvatar = function (request, response) {
+exports.updateAvatar = async function (request, response) {
+    console.log('Update Avatar')
     if(!request.user) {
         console.log('No User')
         return response.status(403)
@@ -10,26 +11,28 @@ exports.updateAvatar = function (request, response) {
     }
 
     let upFile = request.body.filename
+    console.log(upFile)
 
-    let fromFile = path.join(__dirname, '../../uploads/', upFile)
-    let toFile = path.join(__dirname, '../../public/storage/avatars/', upFile)
+    let fromFile = path.join(__dirname, '../public/uploads/', upFile)
+    let toFile = path.join(__dirname, '../public/storage/avatars/', upFile)
 
-    fs.rename(fromFile,toFile, function (err) {
-        if(err){
+    fs.rename(fromFile,toFile, async function (err) {
+        if (err) {
+            console.log(err)
             return response.status(422)
-                .json({message: 'Cant rename'})
+                .json(err)
         }
 
+        console.log(request.user._id)
+
         try {
-            users.updateOne({_id: request.user._id},
-                [
-                    {$set: {avatar: upFile, updated_at: Date.now()}},
-                    {$unset: []}
-                ])
-            return  response.status(204)
+            await users.findOneAndUpdate({_id: request.user._id},
+                {avatar: upFile, updated_at: Date.now()}
+            )
+            return response.status(204)
                 .json({avatarUrl: upFile})
-        } catch (e){
-        return response.status(422).json(e)
+        } catch (e) {
+            return response.status(422).json(e)
         }
     })
 }
