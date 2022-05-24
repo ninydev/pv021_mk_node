@@ -3,6 +3,14 @@ import HomeView from '../views/HomeView.vue'
 
 const routes = [
   {
+    path: '/emailValidate',
+    name: 'emailValidate',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../components/auth/MyEmailVerify')
+  },
+  {
     path: '/',
     name: 'home',
     component: HomeView
