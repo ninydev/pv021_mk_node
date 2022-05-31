@@ -11,6 +11,8 @@ exports.get = function (request, response) {
             .json({ message: 'Not authorized' })
     }
 
+    // let post = { user: request.user, bodyText: request.bodyText /* etc */}
+
     portfolios.find({},
         function (err, all) {
         console.log('err')
