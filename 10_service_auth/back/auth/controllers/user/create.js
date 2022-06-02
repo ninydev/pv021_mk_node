@@ -9,7 +9,7 @@ exports.tryUserCreate = async function (req, res) {
         // Get user input
         const { email, password } = req.body;
 
-        console.log(req.body)
+        // console.log(req.body)
 
         // Validate user input
         if (!(email && password )) {
@@ -34,15 +34,18 @@ exports.tryUserCreate = async function (req, res) {
         });
 
         // Create token
-        const token = jwt.sign(
-            { user_id: user._id, email },
+        // save user token
+        user.token = await jwt.sign(
+            {user_id: user._id, email},
             process.env.TOKEN_KEY,
             {
                 expiresIn: "2h",
-            }
+            },
+            null
         );
-        // save user token
-        user.token = token;
+
+        // console.log('Return User:')
+        // console.log(user)
 
         // return new user
         return res.status(201).json(user);
