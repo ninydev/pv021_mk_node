@@ -51,7 +51,7 @@ exports.tryUserCreate = async function (req, res) {
         return res.status(201).json(user);
     } catch (err) {
         console.log(err);
-        return res.status(500).json(err.message);
+        return res.status(500).send(err.message);
     }
     // Our register logic ends here
 }
