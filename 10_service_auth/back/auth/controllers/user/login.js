@@ -18,14 +18,27 @@ exports.tryLogin = async function (req, res) {
         if (user && (await bcrypt.compare(password, user.password))) {
             // Create token
             user.token  = jwt.sign(
-                { user_id: user._id, email },
+                { user_id: user._id, email},
                 process.env.TOKEN_KEY,
                 {
+                    // expiresIn: "2h",
+                    expiresIn: 10,
+                },
+                null
+            );
+
+            // Токен для обновления токена
+            user.token_refresh = jwt.sign(
+                { user_id: user._id, email, isRefresh: true},
+                process.env.TOKEN_KEY,
+                {
+                    // expiresIn: "2h",
                     expiresIn: "2h",
                 },
                 null
             );
 
+            console.log(user)
             // user
             return res.status(200).json(user);
         }

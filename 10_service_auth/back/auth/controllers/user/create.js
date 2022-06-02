@@ -39,7 +39,8 @@ exports.tryUserCreate = async function (req, res) {
             {user_id: user._id, email},
             process.env.TOKEN_KEY,
             {
-                expiresIn: "2h",
+                // expiresIn: "2h",
+                expiresIn: 60,
             },
             null
         );

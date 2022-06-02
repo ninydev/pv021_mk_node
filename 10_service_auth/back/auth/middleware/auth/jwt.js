@@ -16,7 +16,12 @@ const verifyToken = (req, res, next) => {
         // return res.status(403).send("A token is required for authentication");
     }
     try {
-        req.user = jwt.verify(token, config.TOKEN_KEY);
+        const user = jwt.verify(token, config.TOKEN_KEY);
+        if (user.isRefresh){
+            return next()
+        }
+        res.user = user
+
     } catch (err) {
         return res.status(401).send("Invalid Token");
     }
