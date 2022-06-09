@@ -70,7 +70,7 @@ exports.avatar = async function (request, response) {
                             return response.status(500).json(err.message)
                             throw err;
                         }
-                        console.log(content)
+                        // console.log(content)
                 const blobServiceClient = new BlobServiceClient(AZURE_URL);
                 const containerClient = blobServiceClient.getContainerClient(uploads);
                 const blockBlobClient = containerClient.getBlockBlobClient(fileName);
