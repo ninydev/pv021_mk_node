@@ -57,11 +57,13 @@ async function sleep(ms) {
 exports.avatar = async function (request, response) {
     // console.log(request.file)
     let resultImg = convertWebP(request)
-    // console.log("Code return " + resultImg)
+    console.log("Code return " + resultImg)
     if (resultImg === 201) {
         await sleep(2000);
 
         const fileName = request.file.filename + ".webp"
+
+        console.log(fileName);
 
         fs.readFile(__dirname + '/../../public/uploads/' + fileName,
             async function (err, content) {
@@ -74,7 +76,8 @@ exports.avatar = async function (request, response) {
                 const blobServiceClient = new BlobServiceClient(AZURE_URL);
                 const containerClient = blobServiceClient.getContainerClient(uploads);
                 const blockBlobClient = containerClient.getBlockBlobClient(fileName);
-                const uploadBlobResponse = await blockBlobClient.upload(content, content.length);
+                const options = { blobHTTPHeaders: { blobContentType: 'image/webp' } };
+                const uploadBlobResponse = await blockBlobClient.upload(content, content.length, options);
 
                 return response.send(JSON.stringify(
                     {
