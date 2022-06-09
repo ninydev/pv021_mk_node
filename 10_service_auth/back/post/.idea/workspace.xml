@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f10e965d-a544-466b-ba0a-bca75dc54d4a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../media/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/bin/www" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/config/mongo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/controllers/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/middleware/auth/jwt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/public/stylesheets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../media/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/mongo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/auth/jwt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth/controllers/user/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../auth/controllers/user/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth/controllers/user/refresh.js" beforeDir="false" afterPath="$PROJECT_DIR$/../auth/controllers/user/refresh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth/middleware/auth/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/../auth/middleware/auth/jwt.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2A1sfK4NCASvbtM3HuJcWqueSKR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/keepe/repos/pv021_mk_node/10_service_auth/back/post&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\keepe\repos\pv021_mk_node\10_service_auth\back\post" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f10e965d-a544-466b-ba0a-bca75dc54d4a" name="Changes" comment="" />
+      <created>1654188527447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654188527447</updated>
+      <workItem from="1654188528789" duration="2469000" />
+      <workItem from="1654615724602" duration="1186000" />
+      <workItem from="1654699781514" duration="1255000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

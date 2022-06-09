@@ -33,7 +33,7 @@ exports.tryLogin = async function (req, res) {
                 process.env.TOKEN_KEY,
                 {
                     // expiresIn: "2h",
-                    expiresIn: "2d",
+                    expiresIn: "7d",
                 },
                 null
             );

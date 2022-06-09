@@ -25,7 +25,7 @@ exports.refresh = async  (req, res, next) => {
             process.env.TOKEN_KEY,
             {
                 // expiresIn: "2h",
-                expiresIn: 60,
+                expiresIn: "2h",
             })
 
         // Токен для обновления токена
@@ -34,7 +34,7 @@ exports.refresh = async  (req, res, next) => {
             process.env.TOKEN_KEY,
             {
                 // expiresIn: "2h",
-                expiresIn: "2h",
+                expiresIn: "7d",
             },
             null
         );

@@ -2,6 +2,9 @@
 let express = require('express');
 let app = express();
 
+// Config
+require("dotenv").config();
+
 // Cors
 let cors = require('cors')
 app.use(cors({origin: '*'}))

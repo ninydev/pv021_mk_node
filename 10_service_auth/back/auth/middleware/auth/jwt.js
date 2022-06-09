@@ -17,10 +17,11 @@ const verifyToken = (req, res, next) => {
     }
     try {
         const user = jwt.verify(token, config.TOKEN_KEY);
+        console.log(user)
         if (user.isRefresh){
             return next()
         }
-        res.user = user
+        req.user = user
 
     } catch (err) {
         return res.status(401).send("Invalid Token");
